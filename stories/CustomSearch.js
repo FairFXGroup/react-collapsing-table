@@ -1,8 +1,7 @@
 //React
 import React from 'react';
-import { SearchPropType } from '../utils/propTypes'
 
-const Search = ({ searchString, searchRows, clearSearch }) => {
+const CustomSearch = ({ searchString, searchRows, clearSearch }) => {
     return (
         <div className="react-collapsible-search">
             <input onChange={ searchRows } value={ searchString } placeholder="search"/>
@@ -11,6 +10,4 @@ const Search = ({ searchString, searchRows, clearSearch }) => {
     );
 };
 
-Search.propTypes = SearchPropType;
-
-export default Search
+export default CustomSearch
